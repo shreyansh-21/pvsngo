@@ -68,7 +68,7 @@ export function MissionSection() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-[#4B7142] rounded-[3rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500" />
                 <img
-                  src="/people-planting-young-tree-saplings-in-soil.jpg"
+                  src="/people-planting-young-tree-saplings-in-soil.png"
                   alt="Tree planting initiative"
                   className="relative rounded-[3rem] w-full h-[400px] md:h-[500px] object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                 />
@@ -104,7 +104,7 @@ export function MissionSection() {
                 <img
                   src="/community-project-collaboration.png"
                   alt="Community collaboration"
-                  className="relative rounded-[2rem] w-full h-[250px] object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-500"
+                  className="relative rounded-[2rem] w-full h-[250px] object-cover object-top shadow-xl transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>

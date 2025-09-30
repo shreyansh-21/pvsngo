@@ -41,7 +41,7 @@ export function Navbar() {
                 <span className="text-white font-bold text-xl font-heading">N</span>
               </div>
               <span className="font-heading text-xl font-bold text-forest-green">
-                Nature<span className="text-pastel-green">Hope</span>
+                PVS<span className="text-green-300"> Foundation</span>
               </span>
             </a>
           </div>
@@ -52,7 +52,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-body text-sm font-medium text-gray-700 hover:text-forest-green transition-colors duration-200 relative group"
+                className="font-body text-sm font-medium text-[#C8E1B3] hover:text-forest-green transition-colors duration-200 relative group"
               >
                 {link.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-forest-green transition-all duration-300 group-hover:w-full" />

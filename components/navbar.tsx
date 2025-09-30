@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,16 +36,20 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-forest-green rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl font-heading">N</span>
-              </div>
-              <span className="font-heading text-xl font-bold text-forest-green">
-                PVS<span className="text-green-300"> Foundation</span>
-              </span>
-            </a>
-          </div>
+         <div className="flex-shrink-0">
+          <a href="#home" className="flex items-center gap-2">
+            <Image
+              src="/logo.png"
+              alt="PVS Foundation Logo"
+              width={40}   // adjust size here
+              height={40}
+              className="rounded-full"
+            />
+            <span className="font-heading text-xl font-bold text-forest-green">
+              PVS<span className="text-green-300"> Foundation</span>
+            </span>
+          </a>
+        </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">

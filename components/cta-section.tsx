@@ -2,15 +2,23 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Heart } from "lucide-react"
+import Image from "next/image"
+
 
 export function CtaSection() {
   return (
     <section className="py-20 md:py-32 bg-[#F8F5E3] relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center justify-center p-3 bg-[#C8E1B3] rounded-full mb-4 animate-scale-in">
-            <Heart className="h-8 w-8 text-[#4B7142] fill-[#4B7142]" />
+          <div className="inline-flex items-center justify-center relative w-20 h-20 mb-4 animate-scale-in">
+            <Image
+              src="/logo.png"
+              alt="PVS Foundation Logo"
+              fill
+              className="object-cover rounded-full"
+            />
           </div>
+
 
           <h2 className="font-serif text-4xl md:text-6xl font-bold text-[#4B7142] leading-tight animate-fade-in-up opacity-0">
             Your <span className="text-[#B47A4E]">Voice</span> Matters In Our{" "}

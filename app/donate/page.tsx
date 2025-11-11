@@ -3,6 +3,7 @@
 import { Heart, Copy, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
+import { Navbar } from "@/components/navbar"
 
 export default function DonatePage() {
   const [copied, setCopied] = useState(false)
@@ -22,6 +23,7 @@ export default function DonatePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#F8F5E3] via-white to-[#F8F5E3]">
+      <Navbar/>
       {/* Header */}
       <div className="flex flex-col items-center justify-center pt-12 px-4 sm:pt-16 md:pt-20">
         <div className="animate-fade-in">
@@ -36,13 +38,6 @@ export default function DonatePage() {
         </p>
       </div>
 
-      {/* Thank You Image */}
-      <div className="flex justify-center mt-10 sm:mt-12 md:mt-16 px-4 animate-fade-in-delay-300">
-        <div className="relative w-full max-w-md h-64 sm:h-72 md:h-80 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500">
-          <Image src="/volunteer-saying-thank-you-gratitude.jpg" alt="Thank you from our volunteers" fill className="object-cover" />
-        </div>
-      </div>
-
       {/* QR Code Section */}
       <div className="flex flex-col items-center mt-12 sm:mt-16 md:mt-20 px-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-[#4B7142] mb-6 sm:mb-8 font-sans animate-fade-in-delay-400">
@@ -53,8 +48,8 @@ export default function DonatePage() {
             <Image
               src="/bank-qr-code.jpg"
               alt="Bank QR Code for donations"
-              width={224}
-              height={224}
+              width={299}
+              height={299}
               className="object-cover"
             />
           </div>

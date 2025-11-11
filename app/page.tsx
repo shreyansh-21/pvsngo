@@ -13,6 +13,7 @@ export default function Home() {
         <StatsSection />
         <MissionSection />
         <CtaSection />
+        
       </main>
     </>
   )

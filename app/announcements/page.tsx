@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { Navbar } from "@/components/navbar"
 
 interface Announcement {
   id: string
@@ -27,7 +28,7 @@ const announcements: Announcement[] = [
   },
 
   {
-    id: "3",
+    id: "2",
     date: "NOV 5 2025",
     title: "Organic Herbal Product Line – Development Update",
     description:
@@ -81,6 +82,7 @@ export default function AnnouncementsPage() {
 
   return (
     <main className="bg-[#F8F5E3] min-h-screen">
+      <Navbar/>
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-[#4B7142] to-[#2D5A2D] text-white pt-20 pb-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center animate-fade-in">
@@ -217,7 +219,7 @@ export default function AnnouncementsPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-6 py-3 rounded-full text-gray-900 font-medium flex-1 max-w-xs focus:outline-none focus:ring-2 focus:ring-[#C8E1B3]"
+              className="px-6 py-3 rounded-full font-bold bg-[#C8E1B3] text-[#2D5A2D] flex-1 max-w-xs focus:outline-none focus:ring-2 focus:ring-[#F8F5E3]"
             />
             <button className="px-8 py-3 bg-[#C8E1B3] text-[#2D5A2D] font-bold rounded-full hover:bg-white transition-colors duration-300">
               Subscribe

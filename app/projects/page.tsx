@@ -77,7 +77,7 @@ export default function ProjectsPage() {
 
           <div className="relative z-10">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-josefin font-bold text-forest-green mb-6 animate-fade-in">
-              About Our <span className="text-pastel-green">Mission</span>
+              About Our <span className="text-pastel-green">Projects</span>
             </h1>
             <p className="text-xl md:text-2xl text-clay-brown font-montserrat mb-8 leading-relaxed animate-fade-in-delay-1 max-w-3xl">
               We're dedicated to planting trees, promoting sustainable living, and creating a healthier planet for

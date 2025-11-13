@@ -83,7 +83,7 @@ export function Navbar() {
             ))}
 
             <Link href="/donate" passHref>
-              <Button className="bg-forest-green hover:bg-forest-green/90 text-white font-body font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
+              <Button className=" text-white font-body font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
                 Donate Us
               </Button>
             </Link>
@@ -125,7 +125,7 @@ export function Navbar() {
             ))}
 
             <Link href="/donate" onClick={() => setIsOpen(false)}>
-              <Button className="w-full bg-forest-green hover:bg-forest-green/90 text-white font-body font-semibold py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
+              <Button className="w-full text-white font-body font-semibold py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
                 Donate Us
               </Button>
             </Link>
